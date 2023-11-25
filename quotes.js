@@ -12,6 +12,7 @@ let wordIndex = generateRandNum(wordsBank.words1.length)
 //console.log(wordsBank.words1[wordIndex])
 
 function weatherForecast(){
-    return `On ${wordsBank.words1[wordIndex]}, we expect to have ${wordsBank.words2[wordIndex]} weather, with some ${wordsBank.words3[wordIndex]} wind.`
+    console.log(`On ${wordsBank.words1[generateRandNum(wordsBank.words1.length)]}, we expect to have ${wordsBank.words2[wordIndex]} weather, with some ${wordsBank.words3[wordIndex]} wind.`)
+    
 }
-console.log(weatherForecast());
+weatherForecast();
