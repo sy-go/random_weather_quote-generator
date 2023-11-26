@@ -5,7 +5,7 @@ This is a simple java script random quote generator, subject is weather.
 ```
 - program is to be executed in node js
 - program returnes few weather quotes
-- additionally ASII tank is added for fun
+- additionally ASCII tank is added for fun
 
 ```
 this is my training project aimed to practice Git workflow,
