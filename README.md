@@ -1,5 +1,6 @@
 # random_weather_quote-generator
----
+
+
 ```
 This is a simple java script random quote generator, subject is weather.
 ```
@@ -14,6 +15,6 @@ please leave comments
 
 ```
 >>>
-```
+
 #Go-Sy
-```
+
