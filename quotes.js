@@ -1,6 +1,4 @@
-function generateRandNum(num) {
-    return Math.floor(Math.random() * num);
-}
+// object to store arrays of words/strings 
 
 const wordsBank = {
     words1: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satudray', 'Sunday'],
@@ -10,9 +8,15 @@ const wordsBank = {
     words5: [18, 20, 25, 28, 30, 33, 37]
 }
 
-
+// initiated final array
 let sentencesArray = [];
 
+// random number generator, willbe use to select random item from array
+function generateRandNum(num) {
+    return Math.floor(Math.random() * num);
+}
+
+// builds sentence by loping through each key in wordsBank and appending one item from each array to returned string
 for (par in wordsBank) {
     let wordIndex = generateRandNum(wordsBank[par].length)
     switch (par) {
@@ -29,12 +33,14 @@ for (par in wordsBank) {
             sentencesArray.push(`The lowest temperture is expected to be ${wordsBank.words4[wordIndex]} Celsius.`)
             break;
         case 'words5':
-            sentencesArray.push(`The highest temperture is expected to be ${wordsBank.words5[wordIndex]} Celsius. ${'\n'}    ______${'\n'}   /       )========H${'\n'} |------------|           ${'\n'} |@@-@@--@@-@@|`)
+            sentencesArray.push(`The highest temperture is expected to be ${wordsBank.words5[wordIndex]} Celsius. ${'\n'}    _____${'\n'}   /     )=======H${'\n'} |------------|           ${'\n'} |@@-@@--@@-@@|`)
             break;
         default :
             'invalid data'
     }
 }
+
+// builds sentences, sparated by new line, displays as log
 function weatherForecast(par) {
     let say = par.join('\n');
    console.log(say);
